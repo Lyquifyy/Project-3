@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("MicroML_AST_Viewer")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b1356df474961aafecb08e4b0931c0954f889df")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("MicroML_AST_Viewer")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("MicroML_AST_Viewer")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]
