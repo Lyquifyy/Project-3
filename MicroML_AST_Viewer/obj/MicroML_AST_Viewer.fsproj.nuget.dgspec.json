@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/zander/Documents/Project 3/MicroML_AST_Viewer/MicroML_AST_Viewer.fsproj": {}
+  },
+  "projects": {
+    "/home/zander/Documents/Project 3/MicroML_AST_Viewer/MicroML_AST_Viewer.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/zander/Documents/Project 3/MicroML_AST_Viewer/MicroML_AST_Viewer.fsproj",
+        "projectName": "MicroML_AST_Viewer",
+        "projectPath": "/home/zander/Documents/Project 3/MicroML_AST_Viewer/MicroML_AST_Viewer.fsproj",
+        "packagesPath": "/home/zander/.nuget/packages/",
+        "outputPath": "/home/zander/Documents/Project 3/MicroML_AST_Viewer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/zander/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/share/dotnet/sdk/8.0.408/FSharp/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[8.0.403, )",
+              "generatePathProperty": true
+            },
+            "Giraffe": {
+              "target": "Package",
+              "version": "[7.0.2, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.408/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
