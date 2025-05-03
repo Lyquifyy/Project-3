@@ -1,22 +1,39 @@
 ﻿open Giraffe
+open System
 open Microsoft.AspNetCore.Builder
-open Microsoft.AspNetCore.Hosting
 open Microsoft.Extensions.Hosting
 
-let webApp =
-    choose [
-        route "/" >=> text "Hello from Giraffe!"
-    ]
-
-let configureApp (app: IApplicationBuilder) =
-    app.UseGiraffe webApp
+open Parse
+open Fun
 
 [<EntryPoint>]
 let main args =
-    Host.CreateDefaultBuilder(args)
-        .ConfigureWebHostDefaults(fun webBuilder ->
-            webBuilder.Configure(configureApp))
-        .Build()
-        .Run()
+    let builder = WebApplication.CreateBuilder(args)
+    builder.Services.AddGiraffe() |> ignore
+
+    let app = builder.Build()
+    app.UseStaticFiles() |> ignore
+
+
+    // app.MapGet("/", Func<string>(fun () -> "Hello World!")) |> ignore
+    let webApp =
+        choose [
+            route "/" >=> htmlFile "./wwwroot/index.html"
+            // your other routes
+        ]
+    app.UseGiraffe(webApp)
+
+    printfn "%A" Parse.e1
+
+    printfn "%A" Parse.e2
+
+    eval Parse.e1 [] |> printfn "%A"    
+    eval Parse.e2 [] |> printfn "%A"
+
+    print Parse.e1 |> printfn "%A"
+    print Parse.e2 |> printfn "%A"
+
+    app.Run()
+
     0
 

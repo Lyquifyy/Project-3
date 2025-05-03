@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "/dd1FtGGqWk=",
+  "dgSpecHash": "5+uWWCCpowI=",
   "success": true,
   "projectFilePath": "/home/zander/Documents/Project 3/MicroML_AST_Viewer/MicroML_AST_Viewer.fsproj",
   "expectedPackageFiles": [
     "/home/zander/.nuget/packages/fsharp.core/8.0.403/fsharp.core.8.0.403.nupkg.sha512",
     "/home/zander/.nuget/packages/fsharp.systemtextjson/1.3.13/fsharp.systemtextjson.1.3.13.nupkg.sha512",
+    "/home/zander/.nuget/packages/fslexyacc/11.3.0/fslexyacc.11.3.0.nupkg.sha512",
+    "/home/zander/.nuget/packages/fslexyacc.runtime/11.3.0/fslexyacc.runtime.11.3.0.nupkg.sha512",
     "/home/zander/.nuget/packages/giraffe/7.0.2/giraffe.7.0.2.nupkg.sha512",
     "/home/zander/.nuget/packages/giraffe.viewengine/1.4.0/giraffe.viewengine.1.4.0.nupkg.sha512",
     "/home/zander/.nuget/packages/microsoft.io.recyclablememorystream/3.0.1/microsoft.io.recyclablememorystream.3.0.1.nupkg.sha512",

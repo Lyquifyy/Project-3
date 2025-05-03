@@ -9,6 +9,7 @@
       "MicroML_AST_Viewer/1.0.0": {
         "dependencies": {
           "FSharp.Core": "8.0.403",
+          "FsLexYacc": "11.3.0",
           "Giraffe": "7.0.2"
         },
         "runtime": {
@@ -76,6 +77,23 @@
           }
         }
       },
+      "FsLexYacc/11.3.0": {
+        "dependencies": {
+          "FSharp.Core": "8.0.403",
+          "FsLexYacc.Runtime": "11.3.0"
+        }
+      },
+      "FsLexYacc.Runtime/11.3.0": {
+        "dependencies": {
+          "FSharp.Core": "8.0.403"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FsLexYacc.Runtime.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "11.3.0.0"
+          }
+        }
+      },
       "Giraffe/7.0.2": {
         "dependencies": {
           "FSharp.Core": "8.0.403",
@@ -132,6 +150,20 @@
       "sha512": "sha512-znp8odpdkVGKVX0AvbhiXdmeMi0KJ+A4AyAQWSkfAEAe4Z4clRE+rVhrLnAGrFD1VEIUX2lsQ4o84ywpWZUSGw==",
       "path": "fsharp.systemtextjson/1.3.13",
       "hashPath": "fsharp.systemtextjson.1.3.13.nupkg.sha512"
+    },
+    "FsLexYacc/11.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-v0Q3/c0tizN8vRZ72Tdo+OKU767Yjul0wRJgG1/W15H4tK/9qHne/mylw/gTEIC8FV2zgiDlAudhQpdZXYG3IA==",
+      "path": "fslexyacc/11.3.0",
+      "hashPath": "fslexyacc.11.3.0.nupkg.sha512"
+    },
+    "FsLexYacc.Runtime/11.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-36b+4G+85WXU3kmbtq9hFSMGCLkn1nLzJoPgNaLUusnjXrC5ndAyS+hl13H6frpLCS3DB1wAmx/1SGYDe0avMw==",
+      "path": "fslexyacc.runtime/11.3.0",
+      "hashPath": "fslexyacc.runtime.11.3.0.nupkg.sha512"
     },
     "Giraffe/7.0.2": {
       "type": "package",

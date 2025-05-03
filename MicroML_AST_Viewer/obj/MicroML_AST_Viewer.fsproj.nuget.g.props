@@ -15,5 +15,6 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/home/zander/.nuget/packages/fsharp.core/8.0.403</PkgFSharp_Core>
     <PkgGiraffe Condition=" '$(PkgGiraffe)' == '' ">/home/zander/.nuget/packages/giraffe/7.0.2</PkgGiraffe>
+    <PkgFsLexYacc Condition=" '$(PkgFsLexYacc)' == '' ">/home/zander/.nuget/packages/fslexyacc/11.3.0</PkgFsLexYacc>
   </PropertyGroup>
 </Project>

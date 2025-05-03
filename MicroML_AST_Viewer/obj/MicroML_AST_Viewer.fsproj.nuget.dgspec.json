@@ -45,6 +45,11 @@
               "version": "[8.0.403, )",
               "generatePathProperty": true
             },
+            "FsLexYacc": {
+              "target": "Package",
+              "version": "[11.3.0, )",
+              "generatePathProperty": true
+            },
             "Giraffe": {
               "target": "Package",
               "version": "[7.0.2, )",
@@ -63,6 +68,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
