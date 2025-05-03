@@ -13,6 +13,7 @@
     <SourceRoot Include="/home/zander/.nuget/packages/" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">/home/zander/.nuget/packages/newtonsoft.json/13.0.3</PkgNewtonsoft_Json>
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/home/zander/.nuget/packages/fsharp.core/8.0.403</PkgFSharp_Core>
     <PkgGiraffe Condition=" '$(PkgGiraffe)' == '' ">/home/zander/.nuget/packages/giraffe/7.0.2</PkgGiraffe>
     <PkgFsLexYacc Condition=" '$(PkgFsLexYacc)' == '' ">/home/zander/.nuget/packages/fslexyacc/11.3.0</PkgFsLexYacc>

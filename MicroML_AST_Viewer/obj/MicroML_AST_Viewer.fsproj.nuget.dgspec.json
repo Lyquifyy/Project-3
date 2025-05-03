@@ -54,6 +54,11 @@
               "target": "Package",
               "version": "[7.0.2, )",
               "generatePathProperty": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )",
+              "generatePathProperty": true
             }
           },
           "imports": [

@@ -46,3 +46,4 @@
 /home/zander/Documents/Project 3/MicroML_AST_Viewer/obj/Debug/net8.0/MicroML_AST_Viewer.pdb
 /home/zander/Documents/Project 3/MicroML_AST_Viewer/obj/Debug/net8.0/MicroML_AST_Viewer.genruntimeconfig.cache
 /home/zander/Documents/Project 3/MicroML_AST_Viewer/obj/Debug/net8.0/ref/MicroML_AST_Viewer.dll
+/home/zander/Documents/Project 3/MicroML_AST_Viewer/bin/Debug/net8.0/Newtonsoft.Json.dll
