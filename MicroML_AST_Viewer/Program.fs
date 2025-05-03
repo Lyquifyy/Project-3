@@ -15,9 +15,13 @@ let parseHandler : HttpHandler =
     fun (next : HttpFunc) (ctx : HttpContext) ->
         task {
             let! reqBody = ctx.BindJsonAsync<Request>()
-            let parsedTree = Parse.fromString reqBody.phrase // Assume `Parse.parse` formats the syntax tree
-            let response = { tree = sprintf "%A" parsedTree }
-            return! json response next ctx
+            try
+                let parsedTree = Parse.fromString reqBody.phrase
+                let bracketNotation = Fun.print parsedTree // Use the `print` function
+                let response = { tree = bracketNotation }
+                return! json response next ctx
+            with
+            | ex -> return! json { tree = sprintf "Error: %s" ex.Message } next ctx
         }
 
 [<EntryPoint>]

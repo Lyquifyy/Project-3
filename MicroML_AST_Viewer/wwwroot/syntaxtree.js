@@ -119,3 +119,29 @@ function countOpenBrackets(tokens) {
   }
   return o;
 }
+
+// Adding a listener to redraw the tree when the button is clicked
+document.getElementById('submit').addEventListener('click', async function() {
+  const input = document.getElementById('code').value;
+  try {
+    const response = await fetch("http://localhost:5128/parse", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({phrase: input}),
+    });
+
+    const parsedTree = await response.json();
+
+    console.log("Raw response:", parsedTree.tree); // Debugging
+
+    const formattedPhrase = parsedTree.tree.trim();
+    document.getElementById("code").value = formattedPhrase; // Ensure correct format
+
+    update(); // Force update with formatted input
+    
+  } catch (error) {
+      document.getElementById("parse-error").innerText = "Error: " + error.message;
+  }
+});
