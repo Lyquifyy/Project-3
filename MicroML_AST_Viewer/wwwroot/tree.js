@@ -17,6 +17,16 @@ export default class Tree {
     this.alignment = 0;
     this.canvas = null;
     this.vscaler = 1;
+
+    // Enhanced styling
+    this.nodeColors = {
+      leaf: '#2563eb', // Blue
+      parent: '#0891b2', // Cyan
+      arrow: '#6366f1', // Indigo
+      line: '#64748b' // Slate
+    };
+    this.lineWidth = 1.5;
+    this.triangleOpacity = 0.1;
   }
 
   resizeCanvas(w, h) {
@@ -63,7 +73,7 @@ export default class Tree {
   drawLabel(drawable) {
     this.canvas.setFontSize(this.fontsize);
     if (this.nodecolor) {
-      this.canvas.setFillStyle(drawable.is_leaf ? '#CC0000' : '#0000CC');
+      this.canvas.setFillStyle(drawable.is_leaf ? this.nodeColors.leaf : this.nodeColors.parent);
     } else {
       this.canvas.setFillStyle('black');
     }
