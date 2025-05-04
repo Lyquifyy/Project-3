@@ -125,6 +125,17 @@ input[type="range"]::-moz-range-thumb {
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px var(--shadow);
   margin-bottom: 2rem;
+  width: 100%;
+}
+#input_section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px var(--shadow);
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 textarea {

@@ -122,7 +122,7 @@ function countOpenBrackets(tokens) {
 
 // Adding a listener to redraw the tree when the button is clicked
 document.getElementById('submit').addEventListener('click', async function() {
-  const input = document.getElementById('code').value;
+  const input = document.getElementById('expression').value;
   try {
     const response = await fetch("http://localhost:5128/parse", {
         method: "POST",

@@ -42,12 +42,17 @@
   </select>
   <input type="range" id="spacing" min="75" max="150" value="100" />
 </div>
-
-<div id="input">
-  <h2>Phrase (labelled bracket notation)</h2>
-  <textarea rows="5" id="code">[S [NP jsSyntaxTree][VP [V creates][NP nice syntax trees ->1]]]</textarea>
-  <button id="submit">Generate Tree</button>
-  <span id="parse-error"></span>
+<div id="input_section">
+  <div id="input">
+    <h2>MicroML Expression</h2>
+    <textarea rows="5" id="expression"></textarea>
+    <button id="submit">Generate Tree</button>
+  </div>
+  <div id="input">
+    <h2>Phrase (labelled bracket notation)</h2>
+    <textarea rows="5" id="code">[S [NP jsSyntaxTree][VP [V creates][NP nice syntax trees ->1]]]</textarea>
+    <span id="parse-error"></span>
+  </div>
 </div>
 
 <div id="tree"><canvas id="canvas" width="100" height="100"></canvas></div>
